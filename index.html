@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Warming Prevention</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e0f0ff;
+      color: #333;
+      line-height: 1.6;
+    }
+    header, footer {
+      background-color: #004e89;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 { margin: 0; }
+    nav a {
+      margin: 0 10px;
+      color: #ffdd57;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 20px auto;
+      gap: 30px;
+      padding: 0 20px;
+    }
+    .content {
+      flex: 2;
+      min-width: 300px;
+    }
+    .sidebar {
+      flex: 1;
+      min-width: 250px;
+      background: #ffffffcc;
+      border-left: 4px solid #004e89;
+      padding: 15px;
+      border-radius: 8px;
+      position: sticky;
+      top: 20px;
+      max-height: calc(100vh - 40px);
+      overflow-y: auto;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #004e89;
+      margin-bottom: 10px;
+    }
+    .call-to-action {
+      display: block;
+      width: fit-content;
+      margin: 20px 0;
+      padding: 10px 20px;
+      background-color: #ffdd57;
+      color: #004e89;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .sidebar ul {
+      list-style: square;
+      margin: 0;
+      padding-left: 20px;
+    }
+    .sidebar a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+    #images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin: 30px 0;
+    }
+    #side_images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    #iceberg {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      width: 200px;
+    }
+    #polarBear {
+      transition: transform 0.3s ease;
+      height: 200px;
+    }
+    #message {
+      text-align: center;
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #c0392b;
+      margin: 30px 0;
+      display: none;
+    }
+    details {
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #f9f9f9;
+      padding: 10px 15px;
+    }
+    summary {
+      font-weight: bold;
+      font-size: 1.05em;
+      cursor: pointer;
+      color: #004e89;
+    }
+    footer p { margin: 5px 0; font-size: 0.9em; }
+    @media (max-width: 900px) {
+      main { flex-direction: column; }
+      .sidebar { position: static; max-height: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Global Warming Prevention</h1>
+  <nav>
+    <a href="#causes">Causes</a>
+    <a href="#effects">Effects</a>
+    <a href="#solutions">Solutions</a>
+    <a href="#take-action">Take Action</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+</header>
+
+<main>
+  <div class="content">
+
+    <section id="intro">
+      <p>Welcome! This site is dedicated to sharing the urgent reality of global warming and inspiring action. Below you’ll find sections that break down the science, the impact, and what every one of us can do.</p>
+    </section>
+
+    <section id="images">
+      <div id="images">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3nzJYcULEqz2Bz-AqZhhuNUtxLTgLf4VYv7VX8MNi6lalr6ZpGTA50xDtD49lj3u0gkoyDcMRSOBYh7EYX7IoYRyjoNyV16dNc0gSwq7_eb-Ptio3uOUPK45dAP-yfpwsNXZVKi_xO7w/s640/polar-bear-640x480.jpg" width="500" alt="Polar Bear on Ice" />
+        <div id="side_images">
+          <img id="polarBear" src="https://media.istockphoto.com/id/188067367/photo/an-isolated-polar-bear-on-a-white-background.jpg?s=612x612&w=0&k=20&c=s6H3jMup4l0vwp-UOI3VaNDVgQu6cu1eovcpGT0NxBs=" alt="Standing Polar Bear" />
+          <img id="iceberg" src="./Iceberg.SKIBIDIBAKKA.jpg" alt="Iceberg" />
+        </div>
+      </div>
+      <div id="message">You just represented what humanity is doing to animals — and the Earth.</div>
+    </section>
+
+    <section id="causes">
+      <h2>What Causes Global Warming?</h2>
+      <p>Human activities like burning fossil fuels, deforestation, and industrial agriculture have significantly increased greenhouse gas emissions.</p>
+      <p>Since the Industrial Revolution, CO₂ levels have soared from ~280 ppm to over 420 ppm today, trapping heat in our atmosphere.</p>
+      <p>Other gases like methane (from livestock and landfills) and nitrous oxide also play big roles.</p>
+    </section>
+
+    <section id="effects">
+      <h2>Real-World Impacts</h2>
+      <p>Rising temperatures lead to stronger hurricanes, more frequent wildfires, and longer droughts.</p>
+      <p>Sea levels are rising, putting low-lying cities at risk of flooding—even sinking entirely.</p>
+      <p>Wildlife and coral reefs suffer habitat loss. For example, polar bears are losing their hunting grounds, and coral bleaching is devastating reef ecosystems.</p>
+    </section>
+
+    <section id="solutions">
+      <h2>Global & Local Solutions</h2>
+      <p>Electric vehicles and renewable energy are cutting CO₂ emissions.</p>
+      <p>Reforestation and sustainable agriculture help absorb carbon and restore ecosystems.</p>
+      <p>Government policies like carbon pricing and stricter emission laws drive large-scale change.</p>
+    </section>
+
+    <section id="personal-actions">
+      <h2>What You Can Do Today</h2>
+      <ul>
+        <li>Use LED bulbs and energy-efficient appliances.</li>
+        <li>Walk, bike, carpool, or use public transit whenever possible.</li>
+        <li>Eat less meat—plant-based diets have a smaller carbon footprint.</li>
+        <li>Recycle, reduce, and reuse.</li>
+        <li>Support climate-friendly policies and vote accordingly.</li>
+      </ul>
+    </section>
+
+    <section id="take-action">
+      <h2>Take Action</h2>
+      <p>Feeling inspired? Join youth groups like <a href="https://www.fridaysforfuture.org" target="_blank">Fridays For Future</a> or <a href="https://www.350.org" target="_blank">350.org</a>.</p>
+      <a href="#contact" class="call-to-action">Join G.W.P. Mailing List</a>
+    </section>
+
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>What is global warming?</summary>
+        <p>Global warming is the long-term heating of Earth’s climate due to human-induced greenhouse gases.</p>
+      </details>
+      <details>
+        <summary>How do I become a member of G.W.P.?</summary>
+        <p>G.W.P. isn't an official organization — yet. It’s a grassroots effort by passionate individuals (like me!) who care deeply about the planet. Help spread the word!</p>
+      </details>
+      <details>
+        <summary>How can I help?</summary>
+        <p>Reduce energy usage, recycle, take public transport, eat sustainably, vote for climate-conscious leaders, and educate others.</p>
+      </details>
+      <details>
+        <summary>What does G.W.P. do?</summary>
+        <p>We raise awareness, organize community cleanups, promote sustainable habits, and push for environmental policies.</p>
+      </details>
+    </section>
+
+  </div>
+
+  <aside class="sidebar">
+    <h3>Quick Resources & Links</h3>
+    <p>Explore these trusted sites to learn more or get involved:</p>
+    <ul>
+      <li><a href="https://climate.nasa.gov" target="_blank">NASA Climate Change</a></li>
+      <li><a href="https://www.ipcc.ch" target="_blank">IPCC Reports</a></li>
+      <li><a href="https://www.un.org/en/climatechange" target="_blank">UN Climate Action</a></li>
+      <li><a href="https://www.nrdc.org/stories/global-warming-101" target="_blank">NRDC: Global Warming 101</a></li>
+      <li><a href="https://www.epa.gov/climate-change" target="_blank">EPA Climate Change</a></li>
+      <li><a href="https://www.fridaysforfuture.org" target="_blank">Fridays For Future</a></li>
+      <li><a href="https://www.350.org" target="_blank">350.org</a></li>
+      <li><a href="https://kidsclimateaction.org" target="_blank">Kids Climate Action</a></li>
+    </ul>
+  </aside>
+</main>
+
+<footer>
+  <p>© 2025 Global Warming Prevention (G.W.P.) | Created by a passionate youth coder</p>
+  <p>Contact us: <a href="mailto:info@gwp.org" style="color: #ffdd57;">info@gwp.org</a></p>
+</footer>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const iceberg = document.getElementById("iceberg");
+    const polarBear = document.getElementById("polarBear");
+    const message = document.getElementById("message");
+    let clickCount = 0, maxClicks = 20;
+    iceberg.addEventListener("click", () => {
+      if (clickCount >= maxClicks) return;
+      clickCount++;
+      const scale = 1 - clickCount / maxClicks;
+      iceberg.style.transform = `scale(${scale})`;
+      if (clickCount === maxClicks) {
+        iceberg.style.display = "none";
+        let fall = 0, speed = 5;
+        const anim = setInterval(() => {
+          fall += speed;
+          polarBear.style.transform = `translateY(${fall}px)`;
+          if (fall > window.innerHeight + 200) {
+            clearInterval(anim);
+            polarBear.style.display = "none";
+            message.style.display = "block";
+          }
+        }, 30);
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
